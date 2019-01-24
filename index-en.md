@@ -3,7 +3,9 @@ layout: home
 permalink: /en/
 lang: en
 title: Erik & Sarabs wedding
-
+eriknumber: +46 (0)72-5632949
+sarabnumber: +46 (0)73-6120205
+karinnumber: +46 (0)73-0480279
 section:
     header:
         date: 3 AUGUST 2019
@@ -24,14 +26,14 @@ section:
     overnight:
         title: For guests spending the night
         text1: For all of you that plan on staying the night at the herrgård, you are welcome to check-in from 2PM on saturday. Check-in is done at the reception in 'Kavaljersflygeln', where you will also find most of the rooms.
-        text2: A tasty breakfast buffet will be served on sunday between 9.30-12. The wedding couple plans on having breakfast from around 10. Check-out is at 1PM, but it is possible to stay at the site after that. Rooms are payed at check-out.
+        text2: A tasty breakfast buffet will be served on sunday between 9.30-12. Check-out is at 1PM, but it is possible to stay at the site after that. Rooms are payed at check-out.
     info:
         title: Information
         item1-title: RSVP
         item1-text: We keep our fingers crossed you are able to come! Let the wedding couple know as soon as possible, or latest by the 15th of May.
         item2-title: Staying overnight
-        item2-text1: We will be so happy if you decide to stay the night! Krusenberg Herrgård offers double- and single rooms including breakfast for a special price.
-        item2-text2: For booking, call <a href="tel:+4618180300">018-180300</a> or e-mail <a href="mailto:info@krusenbergherrgard.se">info@krusenbergherrgard.se</a> and let them know you are joining our wedding.
+        item2-text1: We will be so happy if you decide to stay the night! Krusenberg Herrgård offers double and single rooms including breakfast.
+        item2-text2: For booking, call <a href="tel:+4618180300">+46 (0)18-180300</a> or e-mail <a href="mailto:info@krusenbergherrgard.se">info@krusenbergherrgard.se</a> and let them know you are joining our wedding.
         item3-title: Photography
         item3-text: Please take as many photos as you'd like during the day. However, during the ceremony we ask you to not take photos as we will have a professional photographer at that time.
         item4-title: Children

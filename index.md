@@ -2,7 +2,9 @@
 layout: home
 lang: sv
 title: Erik & Sarabs bröllop
-
+eriknumber: 072-5632949
+sarabnumber: 073-6120205
+karinnumber: 073-0480279
 section:
     header:
         date: 3 AUGUSTI 2019
@@ -23,13 +25,13 @@ section:
     overnight:
         title: För övernattande gäster
         text1: För alla er som ska övernatta på herrgården går det bra att checka in från klockan 14 på lördagen. Det gör ni i receptionen i Kavaljersflygeln, där också de flesta av de trivsamma hotellrummen finns.
-        text2: En härlig frukostbuffé serveras på söndagen mellan kl 9.30-12. Brudparet planerar att äta frukost från ca kl 10.00. Utcheckning är kl 13 men det finns möjlighet att stanna kvar på området. Rummen betalas vid utcheckning.
+        text2: En härlig frukostbuffé serveras på söndagen mellan kl 9.30-12. Utcheckning är kl 13 men det finns möjlighet att stanna kvar på området. Rummen betalas vid utcheckning.
     info:
         title: Information
         item1-title: OSA
         item1-text: Vi håller tummarna för att ni kan komma! Meddela detta direkt till brudparet så snart som möjligt, eller senast den 15:e Maj.
         item2-title: Övernattning
-        item2-text1: Vi blir jätteglada om ni vill stanna kvar! Krusenberg herrgård erbjuder dubbel- och enkelrum inlusive frukost till förmånligt pris.
+        item2-text1: Vi blir jätteglada om ni vill stanna kvar! Krusenberg herrgård erbjuder dubbel- och enkelrum inlusive frukost.
         item2-text2: För bokning ring <a href="tel:+4618180300">018-180300</a> alt maila <a href="mailto:info@krusenbergherrgard.se">info@krusenbergherrgard.se</a> och uppge att ni ska deltaga på vårt bröllop.
         item3-title: Fotografering
         item3-text: Vi ser gärna att ni fotar så mycket ni vill under dagen. Däremot ber vi alla gäster att inte fotografera under själva vigseln. Vi kommer då ha en professionell fotograf.
