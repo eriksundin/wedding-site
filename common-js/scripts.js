@@ -50,13 +50,25 @@
 function countdownTime(){
 	
 	if(isExists('#clock')){
-		$('#clock').countdown("2019-08-03 01:00:00", function(event){
-			var $this = $(this).html(event.strftime(''
-				+ '<div class="time-sec"><span class="title">%D</span> days </div>'
-				+ '<div class="time-sec"><span class="title">%H</span> hours </div>'
-				+ '<div class="time-sec"><span class="title">%M</span> minutes </div>'
-				+ '<div class="time-sec"><span class="title">%S</span> seconds </div>'));
-		});
+		var lang = $('html').attr('lang');
+		if (lang == 'en') {
+			$('#clock').countdown("2019-08-03 01:00:00", function(event){
+				var $this = $(this).html(event.strftime(''
+					+ '<div class="time-sec"><span class="title">%D</span> days </div>'
+					+ '<div class="time-sec"><span class="title">%H</span> hours </div>'
+					+ '<div class="time-sec"><span class="title">%M</span> minutes </div>'
+					+ '<div class="time-sec"><span class="title">%S</span> seconds </div>'));
+			});
+		} else {
+			$('#clock').countdown("2019-08-03 01:00:00", function(event){
+				var $this = $(this).html(event.strftime(''
+					+ '<div class="time-sec"><span class="title">%D</span> dagar </div>'
+					+ '<div class="time-sec"><span class="title">%H</span> timmar </div>'
+					+ '<div class="time-sec"><span class="title">%M</span> minuter </div>'
+					+ '<div class="time-sec"><span class="title">%S</span> sekunder </div>'));
+			});
+		}
+		
 	}
 }
 function dropdownMenu(winWidth){
