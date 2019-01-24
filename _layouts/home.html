@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
-<html lang="sv-SE">
+<html lang="{{ page.lang }}">
 <head>
-	<title>{{ site.title }}</title>
+	<title>{{ page.title }}</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
@@ -15,24 +15,29 @@
   
   <!-- Stylesheets -->
 	
-	<link href="common-css/bootstrap.css" rel="stylesheet">
+	<link href="{{site.url}}/common-css/bootstrap.css" rel="stylesheet">
 	
 	
-	<link href="common-css/fluidbox.min.css" rel="stylesheet">
+	<link href="{{site.url}}/common-css/fluidbox.min.css" rel="stylesheet">
 	
-	<link href="common-css/font-icon.css" rel="stylesheet">
+	<link href="{{site.url}}/common-css/font-icon.css" rel="stylesheet">
 	
 	
-	<link href="01-homepage/css/styles.css" rel="stylesheet">
+	<link href="{{site.url}}/01-homepage/css/styles.css" rel="stylesheet">
 	
-	<link href="01-homepage/css/responsive.css" rel="stylesheet">
+	<link href="{{site.url}}/01-homepage/css/responsive.css" rel="stylesheet">
 	
 </head>
 <body>
 	
 	<header>
 		
-		<div class="container">
+		<div class="container clear-fix">
+      {% if page.lang == 'en' %}
+      <a class="lang-link" href="{{site.url}}/">🇸🇪</a>
+      {% else %}
+      <a class="lang-link" href="{{site.url}}/en/">🇬🇧</a>
+      {% endif %}
 		</div><!-- container -->
 	</header>
 	
@@ -42,7 +47,7 @@
 			<div class="display-table-cell">
 				<div class="slider-content">
           <br>
-					<h5 class="date">3 AUGUSTI 2019</h5>
+					<h5 class="date">{{ page.section.header.date }}</h5>
 					<h3 class="pre-title">Krusenberg Herrgård</h3>
 					<h1 class="title">Sarab <i class="icon icon-heart"></i> Erik</h1>
 					
@@ -59,18 +64,17 @@
 				<div class="col-sm-10">
 					
 					<div class="heading">
-						<h2 class="title">Välkomna på bröllop</h2>
+						<h2 class="title">{{ page.section.welcome.title }}</h2>
 						<span class="heading-bottom"><i class="icon icon-star"></i></span>
 					</div>
 
 					<p class="desc margin-bottom">
-            Snart är det dags för bröllop och vi ser fram emot att dela vår dag tillsammans med er! 
-            Bröllopet kommer hållas på Krusenberg Herrgård utanför Knivsta vid vackra Mälaren.
-           </p>
+              {{ page.section.welcome.text }}  
+          </p>
         </div><!-- col-sm-10 -->
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
-            <div class="img-wrapper"><img src="images/krusenberg2.jpg" alt="Content Image">
+            <div class="img-wrapper"><img src="{{site.url}}/images/krusenberg2.jpg" alt="Content Image">
             </div>
 						
         </div>
@@ -85,7 +89,7 @@
 			
 				<div class="col-sm-12">
 					<div class="heading">
-						<h2 class="title">Nedräkningen har börjat</h2>
+						<h2 class="title">{{ page.section.countdown }}</h2>
 						<span class="heading-bottom"><i class="color-white icon icon-star"></i></span>
 					</div>
 				</div>
@@ -109,7 +113,7 @@
 				<div class="col-sm-10">
 					
 					<div class="heading">
-						<h2 class="title">Bröllopsdagen</h2>
+						<h2 class="title">{{ page.section.weddingday.title }}</h2>
 						<span class="heading-bottom"><i class="icon icon-star"></i></span>
 					</div>
 					
@@ -117,26 +121,26 @@
 						
 						<div class="w-detail right">
 							<i class="icon icon-ciurclke"></i>
-							<h4 class="title"><i class="far fa-clock"></i> 15.00</h4>
-							<p>Vigseln inleds vid Mälarens strand (utomhus så länge vädret tillåter) med samling minst 15 minuter innan. Det är en liten bit att gå från parkeringen till vigselplatsen, så tänk på att ha lite extra tid!</p>
+							<h4 class="title"><i class="far fa-clock"></i> {{ page.section.weddingday.item1-title }}</h4>
+							<p>{{ page.section.weddingday.item1-text }}</p>
 						</div><!-- w-detail -->
 						
 						<div class="w-detail left">
 							<i class="icon icon-wine-glass"></i>
-							<h4 class="title"><i class="far fa-clock"></i> ca 15.45</h4>
-							<p>Efterföljande mingel i närheten av vigselplatsen, med brudskål och tilltugg.</p>
+							<h4 class="title"><i class="far fa-clock"></i> {{ page.section.weddingday.item2-title }}</h4>
+							<p>{{ page.section.weddingday.item2-text }}</p>
 						</div><!-- w-detail -->
 						
 						<div class="w-detail right">
                 <i class="icon icon-cake"></i>
-							<h4 class="title"><i class="far fa-clock"></i> ca 17.30</h4>
-							<p>Bröllopet fortsätter med middag och dans i huvudbyggnaden på herrgården. Efter middagen finns dryck att köpa i baren där det går bra att betala med kort och kontanter.</p>
+							<h4 class="title"><i class="far fa-clock"></i> {{ page.section.weddingday.item3-title }}</h4>
+							<p>{{ page.section.weddingday.item3-text }}</p>
             </div><!-- w-detail -->
             
             <div class="w-detail left">
                 <i class="icon far fa-moon"></i>
-                <h4 class="title"><i class="far fa-clock"></i> 02.00</h4>
-                <p>Bröllopsfesten avslutas på herrgården.</p>
+                <h4 class="title"><i class="far fa-clock"></i> {{ page.section.weddingday.item4-title }}</h4>
+                <p>{{ page.section.weddingday.item4-text }}</p>
               </div><!-- w-detail -->
 					</div><!-- wedding-details -->
 					
@@ -151,17 +155,13 @@
 				<div class="col-sm-12">
 					
 					<div class="heading">
-						<h2 class="title">För övernattande gäster</h2>
+						<h2 class="title">{{ page.section.overnight.title }}</h2>
 						<span class="heading-bottom"><i class="color-white icon icon-star"></i></span>
 					</div>
 
 					<div class="ceremony margin-bottom">
-						<p class="desc">För alla er som ska övernatta på herrgården går det bra att checka in från klockan 14 på lördagen. Det gör ni i receptionen i Kavaljersflygeln, där också de flesta av de trivsamma hotellrummen finns.
-                </p>
-              <p class="desc">
-                  En härlig frukostbuffé serveras på söndagen mellan kl 9.30-12. Brudparet planerar att äta frukost från ca kl 10.00. Utcheckning är kl 13 men det finns möjlighet att stanna kvar på området. Rummen betalas vid utcheckning.
-              </p>
-                
+						<p class="desc">{{ page.section.overnight.text1 }}</p>
+              <p class="desc">{{ page.section.overnight.text2 }}</p>
 					</div>
 					
 				</div><!-- col-sm-10 -->
@@ -176,7 +176,7 @@
           <div class="col-sm-10">
             
             <div class="heading">
-              <h2 class="title">Information</h2>
+              <h2 class="title">{{ page.section.info.title }}</h2>
               <span class="heading-bottom"><i class="icon icon-star"></i></span>
             </div>
             
@@ -184,61 +184,58 @@
 
                 <div class="w-detail right">
                     <i class="icon far fa-check-circle"></i>
-                    <h4 class="title">OSA</h4>
-                    <p>
-                        Vi håller tummarna för att ni kan komma! Meddela detta direkt till brudparet så snart som möjligt, eller senast den 15:e Maj.
-                    </p>
+                    <h4 class="title">{{ page.section.info.item1-title }}</h4>
+                    <p>{{ page.section.info.item1-text }}</p>
                   </div><!-- w-detail -->
                   
 
                 <div class="w-detail left">
                     <i class="icon fas fa-bed"></i>
-                    <h4 class="title">Övernattning</h4>
-                    <p>Vi blir jätteglada om ni vill stanna kvar! Krusenberg herrgård erbjuder dubbel- och enkelrum inlusive frukost till förmånligt pris.</p>
+                    <h4 class="title">{{ page.section.info.item2-title }}</h4>
+                    <p>{{ page.section.info.item2-text1 }}</p>
                     <p><a href="https://www.krusenbergherrgard.se">https://www.krusenbergherrgard.se</a></p>
                     <br>
-                    <p>För bokning ring <a href="tel:+4618180300">018-180300</a> alt maila <a href="mailto:info@krusenbergherrgard.se">info@krusenbergherrgard.se</a> och uppge att ni ska deltaga på vårt bröllop.</a></p>
+                    <p>{{ page.section.info.item2-text2 }}</a></p>
                   </div><!-- w-detail -->
               
                   
               <div class="w-detail right">
                 <i class="icon icon-camera"></i>
-                <h4 class="title">Fotografering</h4>
-                <p>
-                    Vi ser gärna att ni fotar så mycket ni vill under dagen. Däremot ber vi alla gäster att inte fotografera under själva vigseln. Vi kommer då ha en professionell fotograf.
-                </p>
+                <h4 class="title">{{ page.section.info.item3-title }}</h4>
+                <p>{{ page.section.info.item3-text }}</p>
               </div><!-- w-detail -->
               
               <div class="w-detail left">
                 <i class="icon fas fa-child"></i>
-                <h4 class="title">Barn</h4>
-                <p>Vi önskar fira vår bröllopsdag i vuxet sällskap. Om ni har barn som fortfarande ammas så är de givetvis välkomna.</p>
+                <h4 class="title">{{ page.section.info.item4-title }}</h4>
+                <p>{{ page.section.info.item4-text }}</p>
               </div><!-- w-detail -->
               
               <div class="w-detail right">
                   <i class="icon fas fa-tshirt"></i>
-                <h4 class="title">Klädkod</h4>
-                <p>Kavaj</p>
+                <h4 class="title">{{ page.section.info.item5-title }}</h4>
+                <p>{{ page.section.info.item5-text }}</p>
               </div><!-- w-detail -->
               
               <div class="w-detail left">
                   <i class="icon fas fa-gift"></i>
-                  <h4 class="title">Presenter</h4>
+                  <h4 class="title">{{ page.section.info.item6-title }}</h4>
+                  <p>{{ page.section.info.item6-text1 }}</p>
+                  <br>
                   <p>
-                      Det som betyder mest för oss är att ni är med och delar vår stora dag, och vi är väldigt glada om så många som möjligt väljer att övernatta på herrgården för att äta frukost med oss dagen efter. 
+                      {{ page.section.info.item6-text2 }}
                   </p>
                   <br>
                   <p>
-                      Skulle ni ändå vilja ge oss någonting är ett bidrag till vår bröllopsresa eller en rolig upplevelse mycket uppskattat.
-                      <br>Bidrag kan även sättas in på bankkonto 9272-856 617 8 i ICA Banken.
+                      {{ page.section.info.item6-text3 }}
                   </p>
                 </div><!-- w-detail -->
 
                 <div class="w-detail right">
                     <i class="icon far fa-grin-alt"></i>
-                  <h4 class="title">Tal, spex, sång etc</h4>
+                  <h4 class="title">{{ page.section.info.item7-title }}</h4>
                   <p>
-                      Vi blir jätteglada för alla typer av arrangemang från er gäster. För dig som vill hålla tal, spexa, sjunga en sång eller göra något annat kul under middagen, ber vi er att höra av er till vårt fantastiska värdpar Karin Sundin och Jason Dainter. Kontakta dem gärna i god tid så att de kan planera in när det passar.
+                      {{ page.section.info.item7-text }}
                   </p>
                   <br>
                   <p>
@@ -263,7 +260,7 @@
 				<div class="col-sm-12">
 					
 					<div class="heading center-text">
-						<h2 class="title">Hitta rätt</h2>
+						<h2 class="title">{{ page.section.find.title }}</h2>
 						<span class="heading-bottom"><i class="icon icon-star"></i></span>
 					</div>
           
@@ -274,11 +271,11 @@
               </div>
               <div class="col-md-6 col-sm-12">
                 <p class="desc">
-                    Krusenberg Herrgård ligger strax utanför Knivsta i Uppland, drygt 5 mil norr om Stockholm och 2 mil söder om Uppsala. Det finns parkering precis vid herrgården.
+                    {{ page.section.find.text1 }}
                 </p>
                 <br>
                 <p class="desc">
-                    Tar ni pendeln till Knivsta och behöver skjuts till Krusenberg? Hör av er i god tid före bröllopshelgen så försöker vi ordna det!
+                    {{ page.section.find.text2 }}
                 </p>
               </div>
             </div>
@@ -298,11 +295,11 @@
 					
 					<div class="col-sm-10">
 						<div class="heading">
-							<h3 class="title">Kontakt</h3>
+							<h3 class="title">{{ page.section.contact.title }}</h3>
 						</div>
 						
 						<div class="margin-bottom">
-							<p><h4>Brudparet</h4></p>
+							<p><h4>{{ page.section.contact.couple }}</h4></p>
               <p>Erik</p>
               <p><i class="fas fa-envelope"></i> <a href="mailto:erik@eriksundin.se">erik@eriksundin.se</a></p> 
               <p><i class="fas fa-phone"></i> <a href="tel:+46725632949">072-5632949</a></p>
@@ -326,7 +323,7 @@
 			
 			<div class="logo-wrapper">
         <i class="icon icon-star"></i>
-        <h3>Vi ser fram emot att dela vår bröllopsdag med er!</h3>
+        <h3>{{ page.section.footer.title }}</h3>
 			</div>
 			
 			
@@ -340,18 +337,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	
 	<!-- SCIPTS -->
 	
-	<script src="common-js/jquery-3.1.1.min.js"></script>
+	<script src="{{site.url}}/common-js/jquery-3.1.1.min.js"></script>
 	
-	<script src="common-js/tether.min.js"></script>
+	<script src="{{site.url}}/common-js/tether.min.js"></script>
 	
-	<script src="common-js/bootstrap.js"></script>
+	<script src="{{site.url}}/common-js/bootstrap.js"></script>
 	
-	<script src="common-js/jquery.countdown.min.js"></script>
+	<script src="{{site.url}}/common-js/jquery.countdown.min.js"></script>
 	
-	<script src="common-js/jquery.fluidbox.min.js"></script>
+	<script src="{{site.url}}/common-js/jquery.fluidbox.min.js"></script>
 	
 	
-	<script src="common-js/scripts.js"></script>
+	<script src="{{site.url}}/common-js/scripts.js"></script>
 	
 </body>
 </html>

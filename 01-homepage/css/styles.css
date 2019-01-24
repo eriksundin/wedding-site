@@ -65,6 +65,16 @@ a:focus, a:active, a:hover,
 button:focus, button:active, button:hover,
 a b.light-color:hover{ text-decoration: none; color: #E45F74; }
 
+.clearfix {
+	overflow: auto;
+}
+
+.lang-link {
+	float: right;
+	padding: 5px;
+	font-size: 2.5em;
+  }
+
 b{ font-weight: 500; }
 
 img{ width: 100%; }
