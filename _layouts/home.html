@@ -1,37 +1,48 @@
 <!DOCTYPE HTML>
 <html lang="{{ page.lang }}">
 <head>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-10246940-3"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-10246940-3');
+	</script>
+
 	<title>{{ page.title }}</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
-	
-	
+
+
 	<!-- Font -->
-	
+
 	<link href="https://fonts.googleapis.com/css?family=Playball%7CBitter" rel="stylesheet">
-  
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  
+
   <!-- Stylesheets -->
-	
+
 	<link href="{{site.url}}/common-css/bootstrap.css" rel="stylesheet">
-	
-	
+
+
 	<link href="{{site.url}}/common-css/fluidbox.min.css" rel="stylesheet">
-	
+
 	<link href="{{site.url}}/common-css/font-icon.css" rel="stylesheet">
-	
-	
+
+
 	<link href="{{site.url}}/01-homepage/css/styles.css" rel="stylesheet">
-	
+
 	<link href="{{site.url}}/01-homepage/css/responsive.css" rel="stylesheet">
-	
+
 </head>
 <body>
-	
+
 	<header>
-		
+
 		<div class="container clear-fix">
       {% if page.lang == 'en' %}
       <a class="lang-link" href="{{site.url}}/">🇸🇪</a>
@@ -40,8 +51,8 @@
       {% endif %}
 		</div><!-- container -->
 	</header>
-	
-	
+
+
 	<div class="main-slider">
 		<div class="display-table center-text">
 			<div class="display-table-cell">
@@ -50,110 +61,110 @@
 					<h5 class="date">{{ page.section.header.date }}</h5>
 					<h3 class="pre-title">Krusenberg Herrgård</h3>
 					<h1 class="title">Sarab <i class="icon icon-heart"></i> Erik</h1>
-					
+
 				</div><!-- slider-content-->
 			</div><!--display-table-cell-->
 		</div><!-- display-table-->
 	</div><!-- main-slider -->
-	
-	
+
+
 	<section class="section story-area center-text">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-1"></div>
 				<div class="col-sm-10">
-					
+
 					<div class="heading">
 						<h2 class="title">{{ page.section.welcome.title }}</h2>
 						<span class="heading-bottom"><i class="icon icon-star"></i></span>
 					</div>
 
 					<p class="desc margin-bottom">
-              {{ page.section.welcome.text }}  
+              {{ page.section.welcome.text }}
           </p>
         </div><!-- col-sm-10 -->
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
             <div class="img-wrapper"><img src="{{site.url}}/images/krusenberg2.jpg" alt="Content Image">
             </div>
-						
+
         </div>
         <div class="col-sm-3"></div>
 			</div><!-- row -->
 		</div><!-- container -->
 	</section><!-- section -->
-	
+
 	<section class="section counter-area center-text">
 		<div class="container">
 			<div class="row">
-			
+
 				<div class="col-sm-12">
 					<div class="heading">
 						<h2 class="title">{{ page.section.countdown }}</h2>
 						<span class="heading-bottom"><i class="color-white icon icon-star"></i></span>
 					</div>
 				</div>
-				
+
 				<div class="col-sm-2"></div>
 				<div class="col-sm-8">
-					
+
 					<div class="remaining-time">
 						<div id="clock"></div>
 					</div><!-- remaining-time -->
 				</div><!-- col-sm-10 -->
-				
+
 			</div><!-- row -->
 		</div><!-- container -->
 	</section><!-- section -->
-	
+
 	<section class="section w-details-area center-text">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-1"></div>
 				<div class="col-sm-10">
-					
+
 					<div class="heading">
 						<h2 class="title">{{ page.section.weddingday.title }}</h2>
 						<span class="heading-bottom"><i class="icon icon-star"></i></span>
 					</div>
-					
+
 					<div class="wedding-details margin-bottom">
-						
+
 						<div class="w-detail right">
 							<i class="icon icon-ciurclke"></i>
 							<h4 class="title"><i class="far fa-clock"></i> {{ page.section.weddingday.item1-title }}</h4>
 							<p>{{ page.section.weddingday.item1-text }}</p>
 						</div><!-- w-detail -->
-						
+
 						<div class="w-detail left">
 							<i class="icon icon-wine-glass"></i>
 							<h4 class="title"><i class="far fa-clock"></i> {{ page.section.weddingday.item2-title }}</h4>
 							<p>{{ page.section.weddingday.item2-text }}</p>
 						</div><!-- w-detail -->
-						
+
 						<div class="w-detail right">
                 <i class="icon icon-cake"></i>
 							<h4 class="title"><i class="far fa-clock"></i> {{ page.section.weddingday.item3-title }}</h4>
 							<p>{{ page.section.weddingday.item3-text }}</p>
             </div><!-- w-detail -->
-            
+
             <div class="w-detail left">
                 <i class="icon far fa-moon"></i>
                 <h4 class="title"><i class="far fa-clock"></i> {{ page.section.weddingday.item4-title }}</h4>
                 <p>{{ page.section.weddingday.item4-text }}</p>
               </div><!-- w-detail -->
 					</div><!-- wedding-details -->
-					
+
 				</div><!-- col-sm-10 -->
 			</div><!-- row -->
 		</div><!-- container -->
 	</section><!-- section -->
-	
+
 	<section class="section ceremony-area center-text">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
-					
+
 					<div class="heading">
 						<h2 class="title">{{ page.section.overnight.title }}</h2>
 						<span class="heading-bottom"><i class="color-white icon icon-star"></i></span>
@@ -163,23 +174,23 @@
 						<p class="desc">{{ page.section.overnight.text1 }}</p>
               <p class="desc">{{ page.section.overnight.text2 }}</p>
 					</div>
-					
+
 				</div><!-- col-sm-10 -->
 			</div><!-- row -->
 		</div><!-- container -->
 	</section><!-- section -->
-	
+
 	<section class="section w-details-area center-text">
       <div class="container">
         <div class="row">
           <div class="col-sm-1"></div>
           <div class="col-sm-10">
-            
+
             <div class="heading">
               <h2 class="title">{{ page.section.info.title }}</h2>
               <span class="heading-bottom"><i class="icon icon-star"></i></span>
             </div>
-            
+
             <div class="wedding-details margin-bottom">
 
                 <div class="w-detail right">
@@ -187,7 +198,7 @@
                     <h4 class="title">{{ page.section.info.item1-title }}</h4>
                     <p>{{ page.section.info.item1-text }}</p>
                   </div><!-- w-detail -->
-                  
+
 
                 <div class="w-detail left">
                     <i class="icon fas fa-bed"></i>
@@ -197,26 +208,26 @@
                     <br>
                     <p>{{ page.section.info.item2-text2 }}</a></p>
                   </div><!-- w-detail -->
-              
-                  
+
+
               <div class="w-detail right">
                 <i class="icon icon-camera"></i>
                 <h4 class="title">{{ page.section.info.item3-title }}</h4>
                 <p>{{ page.section.info.item3-text }}</p>
               </div><!-- w-detail -->
-              
+
               <div class="w-detail left">
                 <i class="icon fas fa-child"></i>
                 <h4 class="title">{{ page.section.info.item4-title }}</h4>
                 <p>{{ page.section.info.item4-text }}</p>
               </div><!-- w-detail -->
-              
+
               <div class="w-detail right">
                   <i class="icon fas fa-tshirt"></i>
                 <h4 class="title">{{ page.section.info.item5-title }}</h4>
                 <p>{{ page.section.info.item5-text }}</p>
               </div><!-- w-detail -->
-              
+
               <div class="w-detail left">
                   <i class="icon fas fa-gift"></i>
                   <h4 class="title">{{ page.section.info.item6-title }}</h4>
@@ -247,23 +258,23 @@
                 </div><!-- w-detail -->
 
             </div><!-- wedding-details -->
-            
+
           </div><!-- col-sm-10 -->
         </div><!-- row -->
       </div><!-- container -->
     </section><!-- section -->
-	
+
 	<section class="section">
 		<div class="container">
 			<div class="row">
-				
+
 				<div class="col-sm-12">
-					
+
 					<div class="heading center-text">
 						<h2 class="title">{{ page.section.find.title }}</h2>
 						<span class="heading-bottom"><i class="icon icon-star"></i></span>
 					</div>
-          
+
           <div class="container">
             <div class="row">
               <div class="col-md-6 col-sm-12 margin-bottom">
@@ -281,74 +292,74 @@
             </div>
           </div>
 
-					
+
 				</div><!-- col-sm-10 -->
 			</div><!-- row -->
 		</div><!-- container -->
 	</section><!-- section -->
-	
+
 	<section class="contact-area">
 		<div class="contact-wrapper section float-left">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-2"></div>
-					
+
 					<div class="col-sm-10">
 						<div class="heading">
 							<h3 class="title">{{ page.section.contact.title }}</h3>
 						</div>
-						
+
 						<div class="margin-bottom">
 							<p><h4>{{ page.section.contact.couple }}</h4></p>
               <p>Erik</p>
-              <p><i class="fas fa-envelope"></i> <a href="mailto:erik@eriksundin.se">erik@eriksundin.se</a></p> 
+              <p><i class="fas fa-envelope"></i> <a href="mailto:erik@eriksundin.se">erik@eriksundin.se</a></p>
               <p><i class="fas fa-phone"></i> <a href="tel:+46725632949">{{ page.eriknumber }}</a></p>
               <br>
               <p>Sarab</p>
               <p><i class="fas fa-envelope"></i> <a href="mailto:sarab.s.84@gmail.com">sarab.s.84@gmail.com</a></p>
               <p><i class="fas fa-phone"></i> <a href="tel:+46736120205">{{ page.sarabnumber }}</a></p>
-							
+
 						</div><!-- margin-bottom -->
 					</div><!-- col-sm-10 -->
-					
+
 				</div><!-- row -->
 			</div><!-- container -->
 		</div><!-- float-left -->
-		
+
 	</section><!-- section -->
-	
-	
+
+
 	<footer>
 		<div class="container center-text">
-			
+
 			<div class="logo-wrapper">
         <i class="icon icon-star"></i>
         <h3>{{ page.section.footer.title }}</h3>
 			</div>
-			
-			
+
+
 			<p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-			
+
 		</div><!-- container -->
 	</footer>
-	
-	
+
+
 	<!-- SCIPTS -->
-	
+
 	<script src="{{site.url}}/common-js/jquery-3.1.1.min.js"></script>
-	
+
 	<script src="{{site.url}}/common-js/tether.min.js"></script>
-	
+
 	<script src="{{site.url}}/common-js/bootstrap.js"></script>
-	
+
 	<script src="{{site.url}}/common-js/jquery.countdown.min.js"></script>
-	
+
 	<script src="{{site.url}}/common-js/jquery.fluidbox.min.js"></script>
-	
-	
+
+
 	<script src="{{site.url}}/common-js/scripts.js"></script>
-	
+
 </body>
 </html>
