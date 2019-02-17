@@ -31,7 +31,7 @@ section:
         item1-title: OSA
         item1-text: Vi håller tummarna för att ni kan komma! Meddela detta direkt till brudparet så snart som möjligt, eller senast den 15:e Maj.
         item2-title: Övernattning
-        item2-text1: Vi blir jätteglada om ni vill stanna kvar! Krusenberg herrgård erbjuder dubbel- och enkelrum inlusive frukost.
+        item2-text1: Vi blir jätteglada om ni vill stanna kvar! Krusenberg herrgård erbjuder dubbel- och enkelrum inklusive frukost.
         item2-text2: För bokning ring <a href="tel:+4618180300">018-180300</a> alt maila <a href="mailto:info@krusenbergherrgard.se">info@krusenbergherrgard.se</a> och uppge att ni ska deltaga på vårt bröllop.
         item3-title: Fotografering
         item3-text: Vi ser gärna att ni fotar så mycket ni vill under dagen. Däremot ber vi alla gäster att inte fotografera under själva vigseln. Vi kommer då ha en professionell fotograf.
@@ -40,8 +40,8 @@ section:
         item5-title: Klädkod
         item5-text: Kavaj
         item6-title: Presenter
-        item6-text1: Det som betyder mest för oss är att ni är med och delar vår stora dag, och vi är väldigt glada om så många som möjligt väljer att övernatta på herrgården för att äta frukost med oss dagen efter. 
-        item6-text2: Skulle ni ändå vilja ge oss någonting är ett bidrag till vår bröllopsresa eller en rolig upplevelse mycket uppskattat. 
+        item6-text1: Det som betyder mest för oss är att ni är med och delar vår stora dag, och vi är väldigt glada om så många som möjligt väljer att övernatta på herrgården för att äta frukost med oss dagen efter.
+        item6-text2: Skulle ni ändå vilja ge oss någonting är ett bidrag till vår bröllopsresa eller en rolig upplevelse mycket uppskattat.
         item6-text3: Bidrag kan även sättas in på bankkonto 9272-856 617 8 i ICA Banken.
         item7-title: Tal, spex, sång etc
         item7-text: Vi blir jätteglada för alla typer av arrangemang från er gäster. För dig som vill hålla tal, spexa, sjunga en sång eller göra något annat kul under middagen, ber vi er att höra av er till vårt fantastiska värdpar Karin Sundin och Jason Dainter. Kontakta dem gärna i god tid så att de kan planera in när det passar.
@@ -56,4 +56,3 @@ section:
         title: Vi ser fram emot att dela vår bröllopsdag med er!
 
 ---
-    
